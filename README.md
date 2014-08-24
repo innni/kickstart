@@ -6,8 +6,9 @@ High Productivity Frontend Development Workflow
 Prerequisites
 --------------
 
-- Node.js
-- Bower
+- [Node.js](http://nodejs.org/)
+- [Bower](http://bower.io/) 
+- [Grunt](http://http://gruntjs.com/)
 
 Installation
 --------------
