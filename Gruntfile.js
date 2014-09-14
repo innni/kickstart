@@ -11,9 +11,9 @@
           },
           dist: {
             src: [
-              './bower_components/jquery/jquery.js',
-              './bower_components/bootstrap/dist/js/bootstrap.js',
-              './app/assets/javascript/src/main.js'
+              './vendor/bower/jquery/jquery.js',
+              './vendor/bower/bootstrap/dist/js/bootstrap.js',
+              './vendor/app/assets/javascript/src/main.js'
             ],
             dest: './app/assets/javascript/main.js',
           },
@@ -41,9 +41,9 @@
         watch: {
           javascript: {
             files: [
-              './bower_components/jquery/jquery.js',
-              './bower_components/bootstrap/dist/js/bootstrap.js',
-              './app/assets/javascript/src/main.js'
+              './vendor/bower/jquery/jquery.js',
+              './vendor/bower/bootstrap/dist/js/bootstrap.js',
+              './vendor/app/assets/javascript/src/main.js'
             ],
             tasks: ['concat:dist','uglify'],
             options: {
