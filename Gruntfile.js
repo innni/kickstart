@@ -11,20 +11,20 @@
           },
           dist: {
             src: [
-              './vendor/bower/jquery/jquery.js',
-              './vendor/bower/bootstrap/dist/js/bootstrap.js',
-              './vendor/app/assets/javascript/src/main.js'
+              './bower_components/jquery/jquery.js',
+              './bower_components/bootstrap/dist/js/bootstrap.js',
+              './bower_components/assets/javascript/src/main.js'
             ],
             dest: './app/assets/javascript/main.js',
           },
         },
         less: {
-          development: {
+          default: {
             options: {
               compress: true,
             },
             files: {
-              "./public/assets/stylesheets/main-min.css":"./app/assets/stylesheets/src/main.less",
+              "./public/assets/stylesheets/main.min.css":"./app/assets/stylesheets/src/main.less",
             }
           }
         },
@@ -41,9 +41,9 @@
         watch: {
           javascript: {
             files: [
-              './vendor/bower/jquery/jquery.js',
-              './vendor/bower/bootstrap/dist/js/bootstrap.js',
-              './vendor/app/assets/javascript/src/main.js'
+              './bower_components/jquery/jquery.js',
+              './bower_components/bootstrap/dist/js/bootstrap.js',
+              './app/assets/javascript/src/main.js'
             ],
             tasks: ['concat:dist','uglify'],
             options: {
